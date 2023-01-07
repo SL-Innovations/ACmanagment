@@ -211,6 +211,7 @@ public class Filtering extends JFrame {
 				public void actionPerformed(ActionEvent e) {
 					
 					   Connection connection=null;
+				
 					   
 					
 				try {

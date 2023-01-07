@@ -190,6 +190,7 @@ public class Update extends JFrame {
 			panel_1.add(lb_select_nextservices);
 			
 			
+			
 			JScrollPane scrollPane = new JScrollPane();
 			scrollPane.setBounds(273, 51, 657, 198);
 			panel_1.add(scrollPane);
