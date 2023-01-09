@@ -313,6 +313,7 @@ public class Form extends JFrame {
 						  
 					  }
 					  
+				
 					  
 					    tf_name.setText(null);
 				        tf_num1.setText(null);
@@ -332,6 +333,21 @@ public class Form extends JFrame {
 			panel_1.add(btn_Sub);
 			
 			JButton btn_reset = new JButton("RESET");
+			btn_reset.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					
+					  LocalDate localDate1 = LocalDate.now();
+						Date date1=Date.valueOf(localDate1);
+					
+					tf_name.setText(null);
+			        tf_num1.setText(null);
+			        tf_num2.setText(null);
+			        tf_Address.setText(null);
+			        tf_numofservices.setText(null);
+			        service_calendar.setDate(date1);
+			        next_service_calendar.setDate(date1); 
+				}
+			});
 			btn_reset.setBorder(new LineBorder(new Color(0, 0, 0)));
 			btn_reset.setFont(new Font("Tahoma", Font.PLAIN, 20));
 			btn_reset.setBackground(new Color(255, 255, 255));
@@ -393,7 +409,7 @@ public class Form extends JFrame {
 			login_back.setBounds(10, 22, 153, 33);
 			panel_2.add(login_back);
 			
-			JButton Manu_back = new JButton("Manu");
+			JButton Manu_back = new JButton("New Form");
 			Manu_back.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					
@@ -406,7 +422,7 @@ public class Form extends JFrame {
 			Manu_back.setBounds(10, 65, 153, 33);
 			panel_2.add(Manu_back);
 			
-			JButton Select_back = new JButton("Select");
+			JButton Select_back = new JButton("Services");
 			Select_back.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					
@@ -419,7 +435,7 @@ public class Form extends JFrame {
 			Select_back.setBounds(10, 108, 153, 33);
 			panel_2.add(Select_back);
 			
-			JButton updated2 = new JButton("Update");
+			JButton updated2 = new JButton("Update Form");
 			updated2.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					

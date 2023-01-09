@@ -118,7 +118,7 @@ public class Filtering extends JFrame {
 			login_back.setBounds(10, 22, 153, 33);
 			panel_2.add(login_back);
 			
-			JButton Manu_back = new JButton("Manu");
+			JButton Manu_back = new JButton("New Form");
 			Manu_back.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					
@@ -131,7 +131,7 @@ public class Filtering extends JFrame {
 			Manu_back.setBounds(10, 65, 153, 33);
 			panel_2.add(Manu_back);
 			
-			JButton Select_back = new JButton("Select");
+			JButton Select_back = new JButton("Services");
 			Select_back.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					
@@ -144,7 +144,7 @@ public class Filtering extends JFrame {
 			Select_back.setBounds(10, 108, 153, 33);
 			panel_2.add(Select_back);
 			
-			JButton updated = new JButton("Update");
+			JButton updated = new JButton("Update Form");
 			updated.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					
