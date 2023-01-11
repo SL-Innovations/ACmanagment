@@ -84,7 +84,7 @@ public class Filtering extends JFrame {
 
 		try {
 			
-			BufferedImage bufferedImage = ImageIO.read(new File("C:\\Users\\dumid\\eclipse-workspace\\ACmanagment\\Image\\logo2.png"));
+			BufferedImage bufferedImage = ImageIO.read(getClass().getClassLoader().getResource("Images/logo2.png"));
 			Image image = bufferedImage.getScaledInstance(350, 100, Image.SCALE_DEFAULT);
 			ImageIcon icon = new ImageIcon(image);
 			getContentPane().setLayout(null);
@@ -417,7 +417,7 @@ public class Filtering extends JFrame {
 			
 		table.setDefaultEditor(Object.class, null);
 			
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
